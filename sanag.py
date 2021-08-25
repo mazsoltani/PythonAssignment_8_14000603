@@ -11,18 +11,18 @@ def game_result():
         print("Equal")
 
 
-for i in range(3):
+for i in range(10):
     computer_choice=random.choice(options)
     user_choice=input('Play the game=')
     if user_choice=='rock' and computer_choice=='paper':
         print('Computer is wins')
-        scores['copmputer']+=1
+        scores['computer']+=1
     elif  user_choice=="paper" and computer_choice=="scissor":
          print('Computer is wins')
-         scores['copmputer']+=1
+         scores['computer']+=1
     elif  user_choice=="scissor" and computer_choice=="rock":
          print('Computer is wins')
-         scores['copmputer']+=1
+         scores['computer']+=1
 
     elif user_choice=='rock' and computer_choice=='sscissor':
         print('You win')
